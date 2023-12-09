@@ -1,0 +1,7 @@
+const { Compound } = require("./compound");
+const { Element } = require("./element");
+
+Compound.hasMany(Element);
+Element.belongsTo(Compound);
+
+module.exports = { Compound, Element };
